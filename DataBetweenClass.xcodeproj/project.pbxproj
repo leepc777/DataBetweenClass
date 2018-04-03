@@ -12,6 +12,9 @@
 		227220732072DCF8004DBF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227220712072DCF8004DBF0C /* Main.storyboard */; };
 		227220752072DCF8004DBF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227220742072DCF8004DBF0C /* Assets.xcassets */; };
 		227220782072DCF8004DBF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227220762072DCF8004DBF0C /* LaunchScreen.storyboard */; };
+		227220842072DE07004DBF0C /* ReceivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227220832072DE07004DBF0C /* ReceivingVC.swift */; };
+		227220862072DE48004DBF0C /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227220852072DE48004DBF0C /* DataModel.swift */; };
+		227220882072DE84004DBF0C /* SendingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227220872072DE84004DBF0C /* SendingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		227220742072DCF8004DBF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227220772072DCF8004DBF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227220792072DCF8004DBF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227220832072DE07004DBF0C /* ReceivingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingVC.swift; sourceTree = "<group>"; };
+		227220852072DE48004DBF0C /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		227220872072DE84004DBF0C /* SendingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				2272206D2072DCF8004DBF0C /* AppDelegate.swift */,
-				2272206F2072DCF8004DBF0C /* ViewController.swift */,
-				227220712072DCF8004DBF0C /* Main.storyboard */,
+				2272207F2072DD2F004DBF0C /* Model */,
+				227220812072DD43004DBF0C /* View */,
+				227220822072DD5E004DBF0C /* Controll */,
 				227220742072DCF8004DBF0C /* Assets.xcassets */,
 				227220762072DCF8004DBF0C /* LaunchScreen.storyboard */,
 				227220792072DCF8004DBF0C /* Info.plist */,
 			);
 			path = DataBetweenClass;
+			sourceTree = "<group>";
+		};
+		2272207F2072DD2F004DBF0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				227220852072DE48004DBF0C /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		227220812072DD43004DBF0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				227220712072DCF8004DBF0C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		227220822072DD5E004DBF0C /* Controll */ = {
+			isa = PBXGroup;
+			children = (
+				2272206F2072DCF8004DBF0C /* ViewController.swift */,
+				227220832072DE07004DBF0C /* ReceivingVC.swift */,
+				227220872072DE84004DBF0C /* SendingVC.swift */,
+			);
+			path = Controll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227220842072DE07004DBF0C /* ReceivingVC.swift in Sources */,
+				227220882072DE84004DBF0C /* SendingVC.swift in Sources */,
+				227220862072DE48004DBF0C /* DataModel.swift in Sources */,
 				227220702072DCF8004DBF0C /* ViewController.swift in Sources */,
 				2272206E2072DCF8004DBF0C /* AppDelegate.swift in Sources */,
 			);
