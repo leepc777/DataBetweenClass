@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,11 +46,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="ReceivingVC" id="lqQ-Bh-02p">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="T9Z-Ij-VWO">
-                            <connections>
-                                <segue destination="htX-l5-i0X" kind="show" id="vot-Kz-Ntg"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="T9Z-Ij-VWO">
+                                <connections>
+                                    <segue destination="htX-l5-i0X" kind="show" identifier="toSendingVC" id="vot-Kz-Ntg"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="99R-95-wxK"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="Udk-Em-Suj" id="CWy-38-aUO"/>
@@ -69,7 +73,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please Type In your text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exx-em-9wV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exx-em-9wV">
                                 <rect key="frame" x="16" y="134" width="343" height="266"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,7 +94,7 @@
                         <viewLayoutGuide key="safeArea" id="nkx-7J-dln"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="exx-em-9wV" id="SAv-2K-Vmo"/>
+                        <outlet property="textView" destination="exx-em-9wV" id="RIg-du-8xa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovp-RH-imm" userLabel="First Responder" sceneMemberID="firstResponder"/>

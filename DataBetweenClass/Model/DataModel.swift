@@ -15,4 +15,18 @@ class DataModel : NSObject {
     
     //create singleton
     static let Asingle = DataModel()
+    
+    //Type property also work
+    static var typeUserInputText = String()
+}
+
+class DataModeClassType {
+    //Type property also work
+    static var typeUserInputText = String()
+
+}
+
+protocol DataDelegate {
+    var userInputText : String? {get set}
+    func showUserText(inputText:String)
 }
