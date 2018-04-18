@@ -36,6 +36,12 @@ class ReceivingVC : UIViewController, DataDelegate {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     
+    @IBAction func DisplaySenderModally(_ sender: Any) {
+        let senderVC = storyboard?.instantiateViewController(withIdentifier: "sender") as! SendingVC
+        senderVC.delegateToSendingVC = self
+//        present(senderVC, animated: true, completion: {print("present completion")})
+                navigationController?.pushViewController(senderVC, animated: true)
+    }
     
     override func viewDidLoad() {
         print("$$$ ReceivingVC at viewDidAppear")

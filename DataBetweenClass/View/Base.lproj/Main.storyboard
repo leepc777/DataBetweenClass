@@ -52,7 +52,11 @@
                                     <segue destination="htX-l5-i0X" kind="show" identifier="toSendingVC" id="vot-Kz-Ntg"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="add" id="99R-95-wxK"/>
+                            <barButtonItem systemItem="add" id="99R-95-wxK">
+                                <connections>
+                                    <action selector="DisplaySenderModally:" destination="BYZ-38-t0r" id="pdM-l1-Lw6"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -68,7 +72,7 @@
         <!--SendingVC-->
         <scene sceneID="HZ2-ME-bi9">
             <objects>
-                <viewController id="htX-l5-i0X" customClass="SendingVC" customModule="DataBetweenClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sender" id="htX-l5-i0X" customClass="SendingVC" customModule="DataBetweenClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w4O-Mr-hdt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
